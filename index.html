@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="shortcut icon" href="Img/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://kit.fontawesome.com/3ea0667da6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Img/Name-logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <div class="horizontal-line">
+                    
+                </div>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer.</p>
+                <h1>Hi, I'm <span>Soham Kalpak Kulkarni</span><br><div class="country">From <div class="saffron"><a href="https://en.wikipedia.org/wiki/India"  target="./blank">India</a></div></div></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------- About ---------  -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Img/My_photo.jpeg" alt="User Photo!">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>Hello, I'm Soham Kalpak Kulkarni!<br><br>
+
+                        I'm a passionate learner of software developement dedicated to crafting clean, efficient, and user-friendly solutions with great efficiency. With a background in Computer Engineering, I've honed my skills in various programming languages and technologies.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link1" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            Experience
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">
+                            Education
+                        </p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>UI/UX</span><br>Designing Web Interface.
+                            </li>
+                            <li>
+                                <span>Development</span><br>Full-Stack Web Development.
+                            </li>
+                            <li>
+                                <span>Logic Build-up</span><br>DSA in C & Java.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <!-- <ul>
+                            <li>
+                                <span>2021 - current</span><br>UI/UX texting at google
+                            </li>
+                            <li>
+                                <span>2019 - current</span><br>Software developer at google
+                            </li>
+                            <li>
+                                <span>2017 - 2019</span><br>Full stack developer at apple private
+                            </li>
+                            <li>
+                                <span>2015 - 2017</span><br>UI/UX designer at JPMorgan
+                            </li>
+                        </ul> -->
+                        <ul>
+                            <li>
+                                <span>Member of IEEE community</span><br>Currently I am a member of Web-development team.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <!-- <li>
+                                <span>2028</span><br>MS from stanford university
+                            </li> -->
+                            <li>
+                                <span>2026</span><br>Btech From Pillai College of Engineering, Mumbai.
+                            </li>
+                            <li>
+                                <span>2022</span><br>Completed 12th from Baheti college, Jalgaon.
+                            </li>
+                            <li>
+                                <span>2020</span><br>Completed my 10th from B.G.Shanbhag Vidyalaya, Jalgaon.
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------- Skills ------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2 class="id1">Front-End Web Development</h2>
+                    <p class="id1">HTML<br><br> CSS<br><br> Bootstrap<br><br> Java Script<br><br> React JS<br></p>
+                    <a href="#" class="id1">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2 class="id2">Back-End Web Development</h2>
+                    <p class="id2">PHP (Basic)<br><br> MySQL Database</p>
+                    <a href="#" class="id2">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2 class="id3">Other Programming Languages</h2>
+                    <p class="id3">C Programming<br><br> DSA in C<br><br> Java<br><br> DSA in Java (Basic)<br><br> Python</p>
+                    <a href="#" class="id3">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------- Portfolio ------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">
+                My Work
+            </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img class="ieee_web" src="Img/IEEE Web.png" alt="My_Work 1!">
+                    <div class="layer">
+                        <h3>IEEE Website</h3>
+                        <p>I am currently a member of the Web Team in the IEEE community at my college.</p>
+                        <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="clg_web" src="Img/Clg Web.png" alt="My_Work 2!">
+                    <div class="layer">
+                        <h3>College Website</h3>
+                        <p>I have tried a clone project of my college website to explore more in a Web Development Field!</p>
+                        <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Img/Calculator.png" alt="My_Work 3!">
+                    <div class="layer">
+                        <h3>Calculator Website</h3>
+                        <p>I have done calculator as my first basic project, and Intension of doing this project was to get a practical knowledge of HTML, CSS and JS.</p>
+                        <a href="https://kulkarnisoham30.github.io/Calculator.github.io/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/kulkarnisoham30" class="btn" target="_blank">See More</a>
+        </div>
+    </div>
+
+    <!-- ------------- Contact ------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> kulkarnisoham82@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9423134469</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100055782010621&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/kulkarnisoham13/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/Soham300104"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/soham-kulkarni-3620a525b/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/kulkarnisoham30"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Img/Main-resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Soham. Made with <i class="fa-solid fa-heart"></i> by Soham Kulkarni</p>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link1");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link1");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwSWvAz28atRU0J3-g_TVunFkEiG6ljp6nheMREKKm61zkHJZGQvKHay1FUTDZZp8xA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+</body>
+
+</html>
